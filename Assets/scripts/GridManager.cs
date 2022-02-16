@@ -8,6 +8,8 @@ public class GridManager : MonoBehaviour
     [SerializeField] private int _width, _height;
     [SerializeField] Tile _tilePrefab;
     [SerializeField]private Transform _cam;
+
+    private Dictionnary<Vector2, Tile> _tiles;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,8 @@ public class GridManager : MonoBehaviour
             {
                 var spawnedTile = Instantiate(_tilePrefab, new Vector3(x, y), Quaternion.identity);
                 spawnedTile.name = "Tile " + x + " " + y;
+
+                
             }
         }
 
