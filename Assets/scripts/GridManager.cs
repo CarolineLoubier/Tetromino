@@ -9,7 +9,7 @@ public class GridManager : MonoBehaviour
     [SerializeField] Tile _tilePrefab;
     [SerializeField]private Transform _cam;
 
-    private Dictionnary<Vector2, Tile> _tiles;
+    private Dictionary<Vector2, Tile> _tiles;
     // Start is called before the first frame update
     void Start()
     {
